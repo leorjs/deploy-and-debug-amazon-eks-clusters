@@ -88,24 +88,24 @@ export CLUSTER_NAME="my-fargate"
 
 4. Implementar el servidor web NGINX.
 
-- Para aplicar la implementación del servidor web de NGINX en el clúster, ejecute el siguiente comando.
-
-  ```
-  kubectl apply -f ./nginx-deployment.yaml
-  ```
-
-- Resultado del comando
-
-  ![image](https://github.com/leorjs/deploy-and-debug-amazon-eks-clusters/assets/119978221/3cd9388c-9c0f-4d8e-9f37-1befe34dee1e)
-
-
-- La implementación incluye tres réplicas de la imagen de NGINX tomada de la galería pública de Amazon ECR. La imagen se implementa en el espacio de nombres predeterminado y se expone en el puerto 80 de los pods en ejecución.
+    - Para aplicar la implementación del servidor web de NGINX en el clúster, ejecute el siguiente comando.
+    
+      ```
+      kubectl apply -f ./nginx-deployment.yaml
+      ```
+    
+    - Resultado del comando
+    
+      ![image](https://github.com/leorjs/deploy-and-debug-amazon-eks-clusters/assets/119978221/3cd9388c-9c0f-4d8e-9f37-1befe34dee1e)
+    
+    
+    - La implementación incluye tres réplicas de la imagen de NGINX tomada de la galería pública de Amazon ECR. La imagen se implementa en el espacio de nombres predeterminado y se expone en el puerto 80 de los pods en ejecución.
 
 5. Compruebe la implementación y los pods.
 
-  ```
-  kubectl get deployment
-  ```
+      ```
+      kubectl get deployment
+      ```
 
   - Resultado del comando
   
@@ -157,7 +157,7 @@ export CLUSTER_NAME="my-fargate"
   
     ```
     export VPC_ID="vpc-<YOUR-VPC-ID>"
-    </details>
+    
     ```
 
 8. Configurar el IAM de una cuenta de servicio del clúster
